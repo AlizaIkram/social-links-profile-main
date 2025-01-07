@@ -1,0 +1,119 @@
+:root {
+  --green: hsl(75, 94%, 57%);
+  --light-grey: hsl(0, 0%, 20%);
+  --medium-grey: hsl(0, 0%, 12%);
+  --dark-grey: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Inter", serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--dark-grey);
+  --webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.social-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--medium-grey);
+  padding: 30px 0;
+  width: 100%;
+  max-width: 25rem;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+.img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.profile-name {
+  font-weight: 600;
+  font-size: 25px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.profile-location {
+  color: var(--green);
+  font-weight: 600;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.profile-bio {
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 18px;
+}
+
+.social-links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 75%;
+  margin: 8px 0;
+  padding: 23px 0;
+  background-color: var(--light-grey);
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.link:hover {
+  background-color: var(--green);
+  color: var(--light-grey);
+  font-weight: inherit;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 30px;
+}
+.attribution a {
+  color: var(--green);
+}
